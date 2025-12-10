@@ -6,10 +6,10 @@
 <head runat="server">
     <h1 class="test">שם זמני</h1>
     <a href="HomePage.aspx">דף הבית</a>
-    <a href="FirstPage.aspx">דף אודות</a>
+    <a href="Update%20Info.aspx">דף אודות</a>
     <a href="SignUp.aspx">יצירת משתמש</a>
-    <a href="SignUp.aspx">כניסה</a>
-    <a href="Logout.aspx">יציאה</a>
+    <a href="Login.aspx">כניסה</a>
+    <a href="Logout.aspx">התנתקות</a>
     <a href="Galary.aspx">גלריה</a>
     <a href="Search.aspx">חיפוש</a>
     <a href="Advance%20Search.aspx">חיפוש מורכב</a>

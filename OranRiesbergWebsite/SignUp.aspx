@@ -12,6 +12,8 @@
         }
 </style>
     <form name="SignUpPage" method="post">
+        <h3>יצירת משתמש</h3>
+     
        <p>:שם משפחה</p><input type="text" name="firstName" id="firstName" placeholder="תכניס שם פרטי" />
         <br />
         <p>:שם משפחה</p><input type="text" name="lastName" id="lastName" placeholder="תכניס שם משפחה" />
