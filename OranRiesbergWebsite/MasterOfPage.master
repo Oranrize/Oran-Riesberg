@@ -4,9 +4,37 @@
 
 <html>
 <head runat="server">
-    <h1>Master Page Head</h1>
-    <a href="HomePage.aspx">Home Page</a>
-    <a href="FirstPage.aspx">First Page</a>
+    <h1 class="test">שם זמני</h1>
+    <a href="HomePage.aspx">דף הבית</a>
+    <a href="FirstPage.aspx">דף אודות</a>
+    <a href="SignUp.aspx">יצירת משתמש</a>
+    <a href="SignUp.aspx">כניסה</a>
+    <a href="Logout.aspx">יציאה</a>
+    <a href="Galary.aspx">גלריה</a>
+    <a href="Search.aspx">חיפוש</a>
+    <a href="Advance%20Search.aspx">חיפוש מורכב</a>
+    <a href="Update%20Info.aspx">עדכון פרטים</a>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color:seashell
+        }
+        a {
+            margin-right: 15px;
+            text-decoration: none;
+            color: darkblue;
+            font-weight: bold;
+            
+        }
+        h1.test {
+            border-bottom-style: solid;
+
+        }
+        
+
+      
+    </style>
     <title></title>
     <asp:ContentPlaceHolder id="head" runat="server">
 
@@ -16,6 +44,7 @@
 <body>
     <form id="form1" runat="server">
     <div>
+       
         <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
         </asp:ContentPlaceHolder>
 
