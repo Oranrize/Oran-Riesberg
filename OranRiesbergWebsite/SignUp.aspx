@@ -8,7 +8,7 @@
             border: 2px solid black;
             padding: 20px;
             background-color: white;
-            float: right;
+            float :left;
         }
 </style>
     <form name="SignUpPage" method="post">

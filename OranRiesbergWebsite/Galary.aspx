@@ -5,5 +5,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
         <h2>גלריה</h2>
     <img src="website.jpg" />
+    <% Response.Write("<h2>"+str+"<h2>"); %>
+  
 </asp:Content>
 

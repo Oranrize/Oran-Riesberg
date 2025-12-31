@@ -5,16 +5,10 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-public partial class Galary : System.Web.UI.Page
+public partial class מתכון_לפיצה : System.Web.UI.Page
 {
-    public String str ="";
     protected void Page_Load(object sender, EventArgs e)
     {
-        
-        for (int i = 1; i <= 10; i++)
-        {
-            str+=i+" ";
-        }
-        
+
     }
 }

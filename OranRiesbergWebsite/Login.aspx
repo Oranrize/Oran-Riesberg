@@ -8,14 +8,14 @@
             border: 2px solid black;
             padding: 20px;
             background-color: white;
-            float: right;
+            float: left;
         }
 </style>
     <form name="SignUpPage" method="post">
          <p>:שם משתמש</p><input type="text" name="userName" placeholder="תכניס את שם המשתמש"/>
         <br />
          <p>:סיסמה</p><input type="text" name="password" placeholder="תכניס את הסיסמה"/>
-        ><br />
+        <br />
         <br />
         <input type="submit" value="כניסה" />
     </form>

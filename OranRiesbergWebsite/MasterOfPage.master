@@ -5,22 +5,24 @@
 <html>
 <head runat="server">
     <h1 class="test">שם זמני</h1>
-    <a href="HomePage.aspx">דף הבית</a>
-    <a href="Update%20Info.aspx">דף אודות</a>
-    <a href="SignUp.aspx">יצירת משתמש</a>
-    <a href="Login.aspx">כניסה</a>
-    <a href="Logout.aspx">התנתקות</a>
-    <a href="Galary.aspx">גלריה</a>
-    <a href="Search.aspx">חיפוש</a>
-    <a href="Advance%20Search.aspx">חיפוש מורכב</a>
-    <a href="Update%20Info.aspx">עדכון פרטים</a>
+    <a class="menu" href="HomePage.aspx" >דף בית</a>
+    <a class="menu" href="Update%20Info.aspx">דף אודות</a>
+    <a class="menu" href="SignUp.aspx">יצירת משתמש</a>
+    <a class="menu" href="Login.aspx">כניסה</a>
+    <a class="menu" href="Logout.aspx">התנתקות</a>
+    <a class="menu" href="Galary.aspx">גלריה</a>
+    <a class="menu" href="Search.aspx">חיפוש</a>
+    <a class="menu" href="Advance%20Search.aspx">חיפוש מורכב</a>
+    <a class="menu" href="Update%20Info.aspx">עדכון פרטים</a>
 
     <style>
         body {
             font-family: Arial, sans-serif;
             background-color:seashell
         }
-        a {
+        a.menu {
+          
+            float: right;
             margin-right: 15px;
             text-decoration: none;
             color: darkblue;
@@ -28,9 +30,15 @@
             
         }
         h1.test {
+           
+            text-align: center;
             border-bottom-style: solid;
-
         }
+        p {
+            font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+        }
+        
+        
         
 
       
