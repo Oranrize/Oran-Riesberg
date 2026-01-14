@@ -5,14 +5,10 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-public partial class Form : System.Web.UI.Page
+public partial class מתכון_לשקשוקה : System.Web.UI.Page
 {
-   public String ages = "";
     protected void Page_Load(object sender, EventArgs e)
     {
-        for (int i = 18; i < 100; i++)
-        {
-            ages+= "<option value='" + i + "'>" + i + "</option>";
-        }
+
     }
 }

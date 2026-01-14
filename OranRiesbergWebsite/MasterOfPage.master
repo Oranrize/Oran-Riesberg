@@ -4,16 +4,33 @@
 
 <html>
 <head runat="server">
-    <h1 class="test">שם זמני</h1>
-    <a class="menu" href="HomePage.aspx" >דף בית</a>
-    <a class="menu" href="Update%20Info.aspx">דף אודות</a>
-    <a class="menu" href="SignUp.aspx">יצירת משתמש</a>
-    <a class="menu" href="Login.aspx">כניסה</a>
-    <a class="menu" href="Logout.aspx">התנתקות</a>
-    <a class="menu" href="Galary.aspx">גלריה</a>
-    <a class="menu" href="Search.aspx">חיפוש</a>
-    <a class="menu" href="Advance%20Search.aspx">חיפוש מורכב</a>
-    <a class="menu" href="Update%20Info.aspx">עדכון פרטים</a>
+  
+       <h1 class="test">מטבח הבית</h1>
+   <a class="menu" href="HomePage.aspx" >דף בית</a>
+   <a class="menu" href="Update%20Info.aspx">דף אודות</a>
+   <a class="menu" href="SignUp.aspx">יצירת משתמש</a>
+   <a class="menu" href="Login.aspx">כניסה</a>
+   <a class="menu" href="Logout.aspx">התנתקות</a>
+   <a class="menu" href="Galary.aspx">גלריה</a>
+   <a class="menu" href="Search.aspx">חיפוש</a>
+   <a class="menu" href="Advance%20Search.aspx">חיפוש מורכב</a>
+   <a class="menu" href="Update%20Info.aspx">עדכון פרטים</a>
+
+    <!working proggres><table>
+        <tr>
+            <td class="list"><a class="menu" href="HomePage.aspx" >דף בית</a></td>
+             <td class="list"><a class="menu" href="Update%20Info.aspx">דף אודות</a></td>
+             <td class="list"><a class="menu" href="SignUp.aspx">יצירת משתמש</a> </td>
+             <td class="list"><a class="menu" href="Login.aspx">כניסה</a></td>
+             <td class="list"><a class="menu" href="Logout.aspx">התנתקות</a></td>
+             <td class="list"><a class="menu" href="Galary.aspx">גלריה</a></td>
+            <td class="list"><a class="menu" href="Search.aspx">חיפוש</a></td>
+            <td class="list"><a class="menu" href="Advance%20Search.aspx">חיפוש מורכב</a></td>
+            <td class="list"><a class="menu" href="Update%20Info.aspx">עדכון פרטים</a></td>
+            <td class="list"><h1 class="test">מטבח הבית</h1></td>
+        </tr>
+        
+    </table>
 
     <style>
         body {
@@ -30,12 +47,15 @@
             
         }
         h1.test {
-           
-            text-align: center;
-            border-bottom-style: solid;
+           font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+            text-align: right;
+          
         }
         p {
             font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+        }
+        td.list{
+            border-bottom-style: solid;
         }
         
         
@@ -44,19 +64,20 @@
       
     </style>
     <title></title>
+        
     <asp:ContentPlaceHolder id="head" runat="server">
 
     </asp:ContentPlaceHolder>
 
 </head>
 <body>
-    <form id="form1" runat="server">
+   
     <div>
        
         <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
         </asp:ContentPlaceHolder>
 
     </div>
-    </form>
+   
 </body>
 </html>

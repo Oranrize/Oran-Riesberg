@@ -11,10 +11,10 @@
             float :left;
         }
 </style>
-    <form name="SignUpPage" method="post">
+    <form name="SignUpPage" method="post" runat="server">
         <h3>יצירת משתמש</h3>
      
-       <p>:שם משפחה</p><input type="text" name="firstName" id="firstName" placeholder="תכניס שם פרטי" />
+       <p>:שם פרטי</p><input type="text" name="firstName" id="firstName" placeholder="תכניס שם פרטי" />
         <br />
         <p>:שם משפחה</p><input type="text" name="lastName" id="lastName" placeholder="תכניס שם משפחה" />
         <br />
@@ -22,20 +22,16 @@
          גבר<input type="radio" name="radio1" value="male" id="radio1" />
            אישה<input type="radio" name="radio1" value="female" id="radio2" />
        אחר<input type="radio" name="radio1" value="other" id="radio3" />
-         <p>שם משתמש:</p><input type="text" name="userName" placeholder="תכניס את שם המשתמש"/>
+         <p>:שם משתמש</p><input type="text" name="userName" placeholder="תכניס את שם המשתמש"/>
         <br />
-         <p>:סיסמה</p><input type="text" name="password" placeholder="תכניס את הסיסמה"/>
+         <p>:סיסמה</p><input type="text" name="password" id="password" placeholder="תכניס את הסיסמה"/>
         <br />
-         <p>:איימיל</p><input type="text" name="email" placeholder="תכניס את האיימיל"/>
+         <p>:איימיל</p><input type="text" name="email" id="email" placeholder="תכניס את האיימיל"/>
 <br />
 
 
       <p>:גיל</p> <select name=select1>
-    <option value="17">17</option>
-    <option value="18">18</option>
-    <option value="19">19</option>
-     <option value="20">20</option>
-     <option value="21">21</option> 
+<% Response.Write(ages); %> 
 </select >
         <br />  
         <p>:תתאר את עצמך בקצרה</p>

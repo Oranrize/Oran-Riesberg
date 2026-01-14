@@ -10,7 +10,7 @@
             background-color: mintcream;
             float: right;
             width: 400px;
-            height: 300px;
+            height: 400px;
         }
 
         img.pic {
@@ -20,34 +20,38 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
-    <h2>דף בית</h2>
-
+<br/>
     <div class="items">
         <a href="מתכון%20לפיצה.aspx">
             <img src="classic-cheese-pizza-FT-RECIPE0422-31a2c938fc2546c9a07b7011658cfd05.jpg" class="pic" /></a>
-        <br />
         <h2>פיצה איטלקית קלאסית</h2>
-        <p>תיאור:</p>
+        <p>נוצר על על ידי:האתר</p>
+        <p>תיאור:פיצה איטלקית קלאסית עם רוטב עגבניות וגבינת מוצרלה. מתכון פשוט וטעים להכנה בבית</p>
         <p>זמן הכנה: 30 דקות</p>
-    
+   <br />
+       
 
     </div>
     <div class="items">
-        <img src="14.jpg" class="pic" />
-
+        <a href="מתכון%20לשקשוקה.aspx">
+            <img  class="pic" src="14.jpg" /></a>
         <h2>שקשוקה ביתית</h2>
-        <p>ביצים רכות ברוטב עגבניות מפולפל וטעים לשעות הבוקר והערב</p>
+       
+         <p>נוצר על על ידי:האתר</p>
+        <p>תיאור:ביצים רכות ברוטב עגבניות מפולפל וטעים לשעות הבוקר והערב</p>
+        <p>זמן הכנה:40 דקות</p>
         <p></p>
     </div>
 
     <div class="items">
         <img src="FIL_7264796_1726655071156.jpg" class="pic" />
         <h2>פלאפל פריך</h2>
-        <p>כדורי חומוס פריכים עם תבלינים ים-תיכוניים.</p>
+         <p>נוצר על על ידי:האתר</p>
+        <p>תיאור:כדורי חומוס פריכים עם תבלינים ים-תיכוניים</p>
     </div>
 
     <div class="items">
-        <img src="47ec37aeedf0f39f013fcc149c499e38.jpg" class="pic" />
+        <a href="מתכון%20לסלט.aspx"><img src="47ec37aeedf0f39f013fcc149c499e38.jpg" class="pic" alt="סלט ישראלי" /> </a>
         <h2>סלט ישראלי רענן</h2>
         <p>עגבניות, מלפפונים, בצל ולימון — פשוט ובריא.</p>
     </div>
