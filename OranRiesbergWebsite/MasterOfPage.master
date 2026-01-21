@@ -4,20 +4,11 @@
 
 <html>
 <head runat="server">
-  
-       <h1 class="test">מטבח הבית</h1>
-   <a class="menu" href="HomePage.aspx" >דף בית</a>
-   <a class="menu" href="Update%20Info.aspx">דף אודות</a>
-   <a class="menu" href="SignUp.aspx">יצירת משתמש</a>
-   <a class="menu" href="Login.aspx">כניסה</a>
-   <a class="menu" href="Logout.aspx">התנתקות</a>
-   <a class="menu" href="Galary.aspx">גלריה</a>
-   <a class="menu" href="Search.aspx">חיפוש</a>
-   <a class="menu" href="Advance%20Search.aspx">חיפוש מורכב</a>
-   <a class="menu" href="Update%20Info.aspx">עדכון פרטים</a>
 
-    <!working proggres><table>
+    <table class="underline">
+       
         <tr>
+            <td class="list"><a class="menu" href="HomePage.aspx" >דף בית</a></td>
             <td class="list"><a class="menu" href="HomePage.aspx" >דף בית</a></td>
              <td class="list"><a class="menu" href="Update%20Info.aspx">דף אודות</a></td>
              <td class="list"><a class="menu" href="SignUp.aspx">יצירת משתמש</a> </td>
@@ -28,13 +19,18 @@
             <td class="list"><a class="menu" href="Advance%20Search.aspx">חיפוש מורכב</a></td>
             <td class="list"><a class="menu" href="Update%20Info.aspx">עדכון פרטים</a></td>
             <td class="list"><h1 class="test">מטבח הבית</h1></td>
+
+
         </tr>
-        
+
     </table>
+  
+
+    
 
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
             background-color:seashell
         }
         a.menu {
@@ -54,8 +50,14 @@
         p {
             font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
         }
-        td.list{
+        td.list {
+           
+        }
+        table.underline {
+            float: right;
             border-bottom-style: solid;
+            border-bottom-width: 2px;
+            border-bottom-color: black;
         }
         
         

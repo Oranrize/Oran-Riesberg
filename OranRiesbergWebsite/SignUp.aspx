@@ -24,22 +24,22 @@
        אחר<input type="radio" name="radio1" value="other" id="radio3" />
          <p>:שם משתמש</p><input type="text" name="userName" placeholder="תכניס את שם המשתמש"/>
         <br />
-         <p>:סיסמה</p><input type="text" name="password" id="password" placeholder="תכניס את הסיסמה"/>
+         <p>:סיסמה</p><input type="password" name="password" id="password" placeholder="תכניס את הסיסמה"/>
         <br />
          <p>:איימיל</p><input type="text" name="email" id="email" placeholder="תכניס את האיימיל"/>
 <br />
 
 
-      <p>:גיל</p> <select name=select1>
+      <p>:גיל</p> <select name=age>
 <% Response.Write(ages); %> 
 </select >
         <br />  
         <p>:תתאר את עצמך בקצרה</p>
-        <textarea rows="5" cols="20" name="textarea1" placeholder="תכניס טקסט" ></textarea>
+        <textarea rows="5" cols="20" name="description" placeholder="תכניס טקסט" ></textarea>
         <br />
-       אני מסכים עם תנאי השימוש<input type="checkbox" name="check1">
+       אני מסכים עם תנאי השימוש<input type="checkbox" name="terms">
         <br />
-אני מעוניין לקבל איימלים לגבי האתר<input type="checkbox" name="check1">
+אני מעוניין לקבל איימלים לגבי האתר<input type="checkbox" name="updates">
         <br />
         <br />
 
