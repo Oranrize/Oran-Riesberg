@@ -9,7 +9,6 @@
        
         <tr>
             <td class="list"><a class="menu" href="HomePage.aspx" >דף בית</a></td>
-            <td class="list"><a class="menu" href="HomePage.aspx" >דף בית</a></td>
              <td class="list"><a class="menu" href="Update%20Info.aspx">דף אודות</a></td>
              <td class="list"><a class="menu" href="SignUp.aspx">יצירת משתמש</a> </td>
              <td class="list"><a class="menu" href="Login.aspx">כניסה</a></td>
@@ -68,7 +67,7 @@
     <title></title>
         
     <asp:ContentPlaceHolder id="head" runat="server">
-
+        
     </asp:ContentPlaceHolder>
 
 </head>

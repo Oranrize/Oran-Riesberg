@@ -29,7 +29,7 @@ public partial class Form : System.Web.UI.Page
             string temrs= Request.Form["terms"];
             string updates= Request.Form["updates"];
 
-            string sqlInsert = "INSERT INTO userInfoT " +
+            string sqlInsert = "INSERT INTO usersInfoT " +
                 "VALUES (" +
                 "N'"+ firstName + "'," +
                 "N'" + lastName + "'," +
@@ -37,15 +37,42 @@ public partial class Form : System.Web.UI.Page
                 "N'" + userName+ "'," +
                 "N'" + password + "'," +
                 "N'" + email + "'," +
-                age + "'," +
+                age + "," +
                 "N'" + descirption + "'," +
                 "N'" + temrs + "'," +
-                "N'" + updates +
+                "N'" + updates + "'" +
                 ")";
-            
-            MyAdoHelper.DoQuery("Users.mdf",sqlInsert);
 
-            successMessage = "הכניסה הצליחה";
+            string sqlSelectU =
+                "SELECT * FROM usersInfoT " +
+                "WHERE userName = N'" + userName + "' ";
+
+            bool userNameExists = MyAdoHelper.IsExist(sqlSelectU);
+
+            string sqlSelectE =
+                "SELECT * FROM usersInfoT " +
+                "WHERE email = N'" + email + "' ";
+
+            bool emailExists = MyAdoHelper.IsExist(sqlSelectE);
+
+            if (userNameExists)
+            {
+                successMessage += " שם המשתמש תפוס";
+            }
+
+            if (emailExists)
+            {
+                successMessage += " האמייל נמצא בשימוש";
+            }
+
+            else
+            {
+                MyAdoHelper.DoQuery("Users.mdf", sqlInsert);
+
+                successMessage = "הכניסה הצליחה";
+                
+                
+            }
         }
     }
 }

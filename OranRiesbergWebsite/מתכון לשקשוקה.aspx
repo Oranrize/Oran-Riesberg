@@ -21,6 +21,9 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <div dir="rtl">
         <br />
+        <br/>
+    <br />
+    <br />
     <h2>מתכון לשקשוקה</h2>
   <img  class="food" src="14.jpg" />
         <br />

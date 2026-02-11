@@ -26,7 +26,7 @@
         <br />
          <p>:סיסמה</p><input type="password" name="password" id="password" placeholder="תכניס את הסיסמה"/>
         <br />
-         <p>:איימיל</p><input type="text" name="email" id="email" placeholder="תכניס את האיימיל"/>
+         <p>:איימיל</p><input type="email" name="email" id="email" placeholder="תכניס את האיימיל"/>
 <br />
 
 
@@ -44,7 +44,10 @@
         <br />
 
         <input type="submit" value="שלח" />
+        <br />
+         <%Response.Write(successMessage);%>
     </form>
+    
 
 </asp:Content>
 

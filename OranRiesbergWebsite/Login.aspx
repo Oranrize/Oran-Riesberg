@@ -20,12 +20,15 @@
     <form name="SignUpPage" method="post">
         <h3 class="login">כניסה למערכת</h3>
         
-                 <p>:איימיל</p><input type="text" name="email" placeholder="תכניס את האיימיל"/>
+                 <p>:איימיל</p><input type="email" name="email" placeholder="תכניס את האיימיל"/>
 <br />
          <p>:סיסמה</p><input type="text" name="password" placeholder="תכניס את הסיסמה"/>
         <br />
         <br />
         <input type="submit" value="כניסה" />
+        <br />
+
+        <%Response.Write(messageL); %>
     </form>
 </asp:Content>
 
