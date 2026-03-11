@@ -70,8 +70,8 @@ public partial class Form : System.Web.UI.Page
                 MyAdoHelper.DoQuery("Users.mdf", sqlInsert);
 
                 successMessage = "הכניסה הצליחה";
-                
-                
+                Response.Redirect("HomePage.aspx");
+
             }
         }
     }

@@ -7,14 +7,14 @@ using System.Web.UI.WebControls;
 
 public partial class Login : System.Web.UI.Page
 {
-    public string messageL = "d";
+    public string messageLog = "";
     protected void Page_Load(object sender, EventArgs e)
     {
         if (Page.IsPostBack)
         {
                
-            string email = Request.Form["email"];
-            string password = Request.Form["password"];
+            string email = Request.Form["email1"];
+            string password = Request.Form["password1"];
 
             string sqlSelect = "SELECT * FROM usersInfoT " +
                 "WHERE email = N'" + email + "' " +
@@ -24,12 +24,16 @@ public partial class Login : System.Web.UI.Page
             bool userExists = MyAdoHelper.IsExist(sqlSelect);
 
 
-            if (!userExists)
-              messageL = " האימייל או סיסמה לא נכונים";
-            
+           if (userExists==false)
+            {
+                messageLog = " האימייל או סיסמה לא נכונים";
+            }
+
             else
-                messageL = "הכניסה הצליחה";
-            
+           {
+                messageLog = "הכניסה הצליחה";
+                Response.Redirect("HomePage.aspx");
+           }
         }
     
   }

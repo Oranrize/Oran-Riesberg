@@ -8,16 +8,17 @@
     <table class="underline">
        
         <tr>
-            <td class="list"><a class="menu" href="HomePage.aspx" >דף בית</a></td>
-             <td class="list"><a class="menu" href="Update%20Info.aspx">דף אודות</a></td>
-             <td class="list"><a class="menu" href="SignUp.aspx">יצירת משתמש</a> </td>
-             <td class="list"><a class="menu" href="Login.aspx">כניסה</a></td>
-             <td class="list"><a class="menu" href="Logout.aspx">התנתקות</a></td>
-             <td class="list"><a class="menu" href="Galary.aspx">גלריה</a></td>
-            <td class="list"><a class="menu" href="Search.aspx">חיפוש</a></td>
+            <td><h1 class="test">מטבח הבית</h1></td>
+            <td class="list"><a class="menu" href="Logout.aspx">התנתקות</a></td>
+            <td class="list"><a class="menu" href="Update%20Info.aspx">דף אודות</a></td>
+            <td class="list"><a class="menu" href="Galary.aspx">גלריה</a></td>
             <td class="list"><a class="menu" href="Advance%20Search.aspx">חיפוש מורכב</a></td>
             <td class="list"><a class="menu" href="Update%20Info.aspx">עדכון פרטים</a></td>
-            <td class="list"><h1 class="test">מטבח הבית</h1></td>
+            <td class="list"><a class="menu" href="Login.aspx">כניסה</a></td>
+            <td class="list"><a class="menu" href="SignUp.aspx">יצירת משתמש</a></td>
+            <td class="list"><a class="menu" href="Search.aspx">חיפוש</a></td>
+            <td style="width:100%" class="list"><a class="menu" href="HomePage.aspx" >דף בית</a></td>
+            
 
 
         </tr>
@@ -42,21 +43,25 @@
             
         }
         h1.test {
-           font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+            font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+            white-space: nowrap;
             text-align: right;
+
           
         }
         p {
             font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
         }
         td.list {
-           
+white-space: nowrap;
         }
         table.underline {
-            float: right;
-            border-bottom-style: solid;
-            border-bottom-width: 2px;
-            border-bottom-color: black;
+            width: 100%;
+            border-bottom: 2px solid black;
+            border-collapse: collapse;
+            direction:rtl;
+            
+           
         }
         
         
