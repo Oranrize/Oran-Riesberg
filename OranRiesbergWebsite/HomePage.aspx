@@ -26,6 +26,7 @@
     <br />
     <br />
     <br />
+    
     <div class="items">
         <a href="מתכון%20לפיצה.aspx">
             <img src="classic-cheese-pizza-FT-RECIPE0422-31a2c938fc2546c9a07b7011658cfd05.jpg" class="pic" /></a>
@@ -49,7 +50,7 @@
     </div>
 
     <div class="items">
-        <img src="FIL_7264796_1726655071156.jpg" class="pic" />
+        <a href="מתכון%20לפלפל.aspx"><img src="FIL_7264796_1726655071156.jpg" class="pic" /></a>
         <h2>פלאפל פריך</h2>
          <p>נוצר על על ידי:האתר</p>
         <p>תיאור:כדורי חומוס פריכים עם תבלינים ים-תיכוניים</p>

@@ -9,16 +9,26 @@
        
         <tr>
             <td><h1 class="test">מטבח הבית</h1></td>
-            <td class="list"><a class="menu" href="Logout.aspx">התנתקות</a></td>
+            <td class="list"><a class="menu" href="HomePage.aspx" >דף בית</a></td>
+            <%if (Session["user"]!="yes" || Session["admin"] !="yes") {  
+                    %>
+            <td class="list"><a class="menu" href="SignUp.aspx">יצירת משתמש</a></td>
+            <%} %>
+            <td class="list"><a class="menu" href="Login.aspx">כניסה</a></td>
             <td class="list"><a class="menu" href="Update%20Info.aspx">דף אודות</a></td>
             <td class="list"><a class="menu" href="Galary.aspx">גלריה</a></td>
             <td class="list"><a class="menu" href="Advance%20Search.aspx">חיפוש מורכב</a></td>
             <td class="list"><a class="menu" href="Update%20Info.aspx">עדכון פרטים</a></td>
-            <td class="list"><a class="menu" href="Login.aspx">כניסה</a></td>
-            <td class="list"><a class="menu" href="SignUp.aspx">יצירת משתמש</a></td>
+             <%if (Session["user"]!="yes" || Session["admin"] !="yes") {  
+         %>
+            <td class="list"><a class="menu" href="adminPage.aspx">דף מנהל</a></td>
+            <%} %>
             <td class="list"><a class="menu" href="Search.aspx">חיפוש</a></td>
-            <td style="width:100%" class="list"><a class="menu" href="HomePage.aspx" >דף בית</a></td>
-            
+             <%if (Session["user"]=="yes" || Session["admin"] =="yes") {  
+         %>
+             <td class="list"><a class="menu" href="Logout.aspx">התנתקות</a></td>
+             <%} %>
+            <td style="width:100%"  class="list"><a class="menu" href="Galary.aspx">גלריה</a></td>
 
 
         </tr>
@@ -77,7 +87,7 @@ white-space: nowrap;
 
 </head>
 <body>
-   
+  <p>שלום</p> <%=Session["name"] %>
     <div>
        
         <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
