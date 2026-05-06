@@ -4,5 +4,11 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <h1>admin page</h1>
+
+    <table>
+        <tr>
+            
+        </tr>
+    </table>
 </asp:Content>
 

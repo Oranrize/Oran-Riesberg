@@ -55,14 +55,19 @@ public partial class Form : System.Web.UI.Page
 
             bool emailExists = MyAdoHelper.IsExist(sqlSelectE);
 
-            if (userNameExists)
+            if (userNameExists == false && emailExists == true)
             {
                 successMessage += " שם המשתמש תפוס";
             }
 
-            if (emailExists)
+            if (emailExists==false && userNameExists == false)
             {
                 successMessage += " האמייל נמצא בשימוש";
+            }
+
+            if(userNameExists == true && emailExists == true)
+            {
+                successMessage += "שם המשתמש תפוס והאיימיל נמצא בשימוש";
             }
 
             else

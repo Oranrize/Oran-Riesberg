@@ -19,8 +19,8 @@
             <td class="list"><a class="menu" href="Galary.aspx">גלריה</a></td>
             <td class="list"><a class="menu" href="Advance%20Search.aspx">חיפוש מורכב</a></td>
             <td class="list"><a class="menu" href="Update%20Info.aspx">עדכון פרטים</a></td>
-             <%if (Session["user"]!="yes" || Session["admin"] !="yes") {  
-         %>
+             <%if (Session["admin"] =="yes") {  
+                   %>
             <td class="list"><a class="menu" href="adminPage.aspx">דף מנהל</a></td>
             <%} %>
             <td class="list"><a class="menu" href="Search.aspx">חיפוש</a></td>
@@ -87,13 +87,16 @@ white-space: nowrap;
 
 </head>
 <body>
-  <p>שלום</p> <%=Session["name"] %>
+    <h3 style=" color:black;direction:rtl;">שלום <%=Session["name"] %></h3>
     <div>
        
         <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+            
         </asp:ContentPlaceHolder>
 
     </div>
-   
+ 
+       
 </body>
+    
 </html>

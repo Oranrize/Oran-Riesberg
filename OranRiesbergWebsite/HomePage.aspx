@@ -63,32 +63,32 @@
     </div>
 
     <div class="items">
-        <img src="shutterstock_348679415_i.jpg" class="pic" />
+        <a href="סלמון%20בתנור.aspx"><img src="shutterstock_348679415_i.jpg" class="pic" /></a>
         <h2>סלמון בתנור</h2>
         <p>סלמון צלוי בתבלינים קלים וליווי ירקות צלויים.</p>
     </div>
 
     <div class="items">
-        <img src="אסף-אמברם-00452-1.jpg" class="pic" />
+        <a href="מתכון%20לעוגת%20שוקולד.aspx"><img src="אסף-אמברם-00452-1.jpg" class="pic" /></a>
         <h2>עוגת שוקולד לחה</h2>
         <p>עוגה איטית ואפויה עם מרכז שוקולדי ונימוח.</p>
     </div>
 
     <div class="items">
-        <img src="ea1befefbc587bd5c025b421e8b800b0.jpg" class="pic" />
+        <a href="מתכון%20לטוסט%20צרפתי.aspx"><img src="ea1befefbc587bd5c025b421e8b800b0.jpg" class="pic" /></a>
         <h2>טוסט צרפתי</h2>
         <p>פרוסות לחם מטוגנות בחמאה ובביצה — מושלם בארוחת בוקר.</p>
     </div>
 
     <div class="items">
-        <img src="IMG_0002-Small.jpg" class="pic" />
+        <a href="מתכון%20לריזוטו%20פטריות.aspx"><img src="IMG_0002-Small.jpg" class="pic" /></a>
         <h2>ריזוטו פטריות שמנתי</h2>
         <p>אורז ארבוריו קרמי עם פטריות מטוגנות ופרמזן.</p>
 
     </div>
 
     <div class="items">
-        <img src="קרבונרה-1024x768.jpg" class="pic" />
+        <a href="פסטה%20קרבונרה%20קלאסית.aspx"><img src="קרבונרה-1024x768.jpg" class="pic" /></a>
         <h2>פסטה קרבונרה קלאסית</h2>
         <p>פסטה עם ביצים, גואנקיילה (או בייקון) ופרמזן — פשוט וטעים.</p>
     </div>
