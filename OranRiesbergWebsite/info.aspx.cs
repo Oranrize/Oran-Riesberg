@@ -1,20 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-
 public partial class Update_Info : System.Web.UI.Page
 {
-    public string info = "";
     protected void Page_Load(object sender, EventArgs e)
     {
-        string sqlSelect = "SELECT * FROM usersInfoT " +
-                    " WHERE email = N'" + Session["name"] + "' ";
 
-        DataTable dt = MyAdoHelper.ExecuteDataTable(sqlSelect);
     }
 }

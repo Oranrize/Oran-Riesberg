@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterOfPage.master" AutoEventWireup="true" CodeFile="HomePage.aspx.cs" Inherits="HomePage" %>
+﻿ <%@ Page Title="" Language="C#" MasterPageFile="~/MasterOfPage.master" AutoEventWireup="true" CodeFile="HomePage.aspx.cs" Inherits="HomePage" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
     <br />
@@ -19,7 +19,36 @@
             width: 50%;
             height: 50%;
         }
+        input.move {
+            float: right;
+        }
     </style>
+    
+            <script>
+                function searchFunction() {
+
+                    var input = document.getElementById('myInput');
+                    var filter = input.value.toLowerCase().trim();
+
+
+                    var items = document.getElementsByClassName('items');
+
+
+                    var foodNames = ["פיצה איטלקית קלאסית", "שקשוקה ביתית", "פלאפל פריך", "סלט ישראלי רענן", "סלמון בתנור", "עוגת שוקולד לחה", "טוסט צרפתי", "ריזוטו פטריות שמנתי", "פסטה קרבונרה קלאסית"];
+
+                    for (var i = 0; i < items.length; i++) {
+                        if (items[i] && foodNames[i]) {
+
+                            if (foodNames[i].toLowerCase().indexOf(filter) > -1) {
+                                items[i].style.display = "";
+                            } else {
+                                items[i].style.display = "none";
+                            }
+                        }
+                    }
+                }
+</script>
+
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
 <br/>
@@ -27,6 +56,16 @@
     <br />
     <br />
     
+    <input class="move" type="text" id="myInput" onkeyup="searchFunction()" placeholder="...חפש מתכון">
+
+     <br />
+ <br />
+ <br />
+
+
+
+
+
     <div class="items">
         <a href="מתכון%20לפיצה.aspx">
             <img src="classic-cheese-pizza-FT-RECIPE0422-31a2c938fc2546c9a07b7011658cfd05.jpg" class="pic" /></a>
@@ -92,5 +131,6 @@
         <h2>פסטה קרבונרה קלאסית</h2>
         <p>פסטה עם ביצים, גואנקיילה (או בייקון) ופרמזן — פשוט וטעים.</p>
     </div>
+
 </asp:Content>
 
