@@ -13,8 +13,8 @@
             <%if (Session["user"]!="yes" && Session["admin"] !="yes") {  
                     %>
             <td class="list"><a class="menu" href="SignUp.aspx">יצירת משתמש</a></td>
-            <%} %>
             <td class="list"><a class="menu" href="Login.aspx">כניסה</a></td>
+            <%} %>
             <td class="list"><a class="menu" href="info.aspx">דף אודות</a></td>
             <!-- <td class="list"><a class="menu" href="Advance%20Search.aspx">חיפוש מורכב</a></td> -->
              <%if (Session["admin"] =="yes") {  
